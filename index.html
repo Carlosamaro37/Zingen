@@ -1,24 +1,314 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zingen - Karaoke</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
-<header>
-    <h1>oi
-    </h1>
-</header>
+    <!-- Header -->
+    <header class="header py-base">
+        <div class="container header__inner">
+            <a href="#" class="logo">Zingen</a>
 
-    
+            <nav class="desktop-only" aria-label="Principal">
+                <ul role="list" class="nav-list">
+                    <li><a href="#app">Conheça o app</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#planos">Planos e preços</a></li>
+                </ul>
+            </nav>
+
+            <a href="#download" class="btn btn-md btn-primary">Baixar agora</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero__content">
+                <svg class="music-bars" viewBox="0 0 412 104" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="sunshine" x1="0" y1="0" x2="412" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#FC4A1A"/>
+                            <stop offset="1" stop-color="#F7B733"/>
+                        </linearGradient>
+                    </defs>
+                    <g fill="url(#sunshine)">
+                        <rect x="0" y="12" width="4" height="80" rx="2"/>
+                        <rect x="8" y="20" width="4" height="64" rx="2"/>
+                        <rect x="16" y="24" width="4" height="56" rx="2"/>
+                        <rect x="24" y="24" width="4" height="56" rx="2"/>
+                        <rect x="32" y="32" width="4" height="40" rx="2"/>
+                        <rect x="40" y="40" width="4" height="24" rx="2"/>
+                        <rect x="48" y="34" width="4" height="36" rx="2"/>
+                        <rect x="56" y="36" width="4" height="32" rx="2"/>
+                        <rect x="64" y="36" width="4" height="32" rx="2"/>
+                        <rect x="72" y="38" width="4" height="28" rx="2"/>
+                        <rect x="80" y="24" width="4" height="56" rx="2"/>
+                        <rect x="88" y="14" width="4" height="76" rx="2"/>
+                        <rect x="96" y="8" width="4" height="88" rx="2"/>
+                        <rect x="104" y="0" width="4" height="104" rx="2"/>
+                        <rect x="112" y="14" width="4" height="76" rx="2"/>
+                        <rect x="120" y="28" width="4" height="48" rx="2"/>
+                        <rect x="128" y="46" width="4" height="12" rx="2"/>
+                        <rect x="136" y="32" width="4" height="40" rx="2"/>
+                        <rect x="144" y="16" width="4" height="72" rx="2"/>
+                        <rect x="152" y="12" width="4" height="80" rx="2"/>
+                        <rect x="160" y="24" width="4" height="56" rx="2"/>
+                        <rect x="168" y="20" width="4" height="64" rx="2"/>
+                        <rect x="176" y="20" width="4" height="64" rx="2"/>
+                        <rect x="184" y="32" width="4" height="40" rx="2"/>
+                        <rect x="192" y="44" width="4" height="16" rx="2"/>
+                        <rect x="200" y="48" width="4" height="8" rx="2"/>
+                        <rect x="208" y="42" width="4" height="20" rx="2"/>
+                        <rect x="216" y="36" width="4" height="32" rx="2"/>
+                        <rect x="224" y="32" width="4" height="40" rx="2"/>
+                        <rect x="232" y="36" width="4" height="32" rx="2"/>
+                        <rect x="240" y="32" width="4" height="40" rx="2"/>
+                        <rect x="248" y="38" width="4" height="28" rx="2"/>
+                        <rect x="256" y="24" width="4" height="56" rx="2"/>
+                        <rect x="264" y="34" width="4" height="36" rx="2"/>
+                        <rect x="272" y="22" width="4" height="60" rx="2"/>
+                        <rect x="280" y="26" width="4" height="52" rx="2"/>
+                        <rect x="288" y="32" width="4" height="40" rx="2"/>
+                        <rect x="296" y="44" width="4" height="16" rx="2"/>
+                        <rect x="304" y="48" width="4" height="8" rx="2"/>
+                        <rect x="312" y="44" width="4" height="16" rx="2"/>
+                        <rect x="320" y="38" width="4" height="28" rx="2"/>
+                        <rect x="328" y="34" width="4" height="36" rx="2"/>
+                        <rect x="336" y="38" width="4" height="28" rx="2"/>
+                        <rect x="344" y="42" width="4" height="20" rx="2"/>
+                        <rect x="352" y="40" width="4" height="24" rx="2"/>
+                        <rect x="360" y="34" width="4" height="36" rx="2"/>
+                        <rect x="368" y="40" width="4" height="24" rx="2"/>
+                        <rect x="376" y="34" width="4" height="36" rx="2"/>
+                        <rect x="384" y="36" width="4" height="32" rx="2"/>
+                        <rect x="392" y="40" width="4" height="24" rx="2"/>
+                        <rect x="400" y="44" width="4" height="16" rx="2"/>
+                        <rect x="408" y="48" width="4" height="8" rx="2"/>
+                    </g>
+                </svg>
+
+                <div class="hero__text">
+                    <h1>Quem canta seus males espanta</h1>
+                    <p class="hero__subtitle">Cantar nunca foi tão fácil</p>
+                </div>
+
+                <div class="hero__cta">
+                    <a href="#planos" class="btn btn-md btn-secondary">Ver planos</a>
+                    <a href="#download" class="btn btn-md btn-primary">Baixar agora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conheça o app -->
+        <section class="about py-xl" id="app">
+            <div class="container about__inner">
+                <div class="about__text">
+                    <span class="eyebrow">Conheça o app</span>
+                    <h2>O aplicativo perfeito para aprender a cantar</h2>
+                    <p>Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias das músicas. Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar, sua voz e afinação é comparada pelo algoritmo permitindo uma avaliação precisa da sua performance te ajudando a melhorar seu canto.</p>
+                </div>
+
+                <img class="about__image" src="assets/App%20mockups.png" width="544" height="558" alt="Duas telas do aplicativo Zingen: letra da música durante o karaokê e a busca de músicas">
+            </div>
+        </section>
+
+        <!-- Funcionalidades -->
+        <section class="features py-xl" id="funcionalidades">
+            <div class="container features__grid">
+                <article class="feature-card">
+                    <img src="assets/icons/MagicWand.svg" width="32" height="32" alt="">
+                    <div class="feature-card__text">
+                        <h3>A maior biblioteca de músicas de Karaokê!</h3>
+                        <p>Nossa IA remove a voz de qualquer música e a deixa pronta pra cantar, num passe de mágica!</p>
+                    </div>
+                </article>
+
+                <article class="feature-card feature-card--wide">
+                    <img src="assets/icons/GameController.svg" width="32" height="32" alt="">
+                    <div class="feature-card__text">
+                        <h3>Experiência gamificada</h3>
+                        <p>Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe reconhecimento e comemore sua evolução!</p>
+                    </div>
+                    <img class="feature-card__phone phone--bottom-right" src="assets/Tela%202.png" width="240" height="486" alt="Tela do app com a letra da música e a pontuação do cantor">
+                </article>
+
+                <article class="feature-card">
+                    <img src="assets/icons/MicrophoneStage.svg" width="32" height="32" alt="">
+                    <div class="feature-card__text">
+                        <h3>Grave suas performances</h3>
+                        <p>Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação de áudio e vídeo permite que você aproveite a experiência ao máximo!</p>
+                    </div>
+                </article>
+
+                <article class="feature-card feature-card--wide feature-card--phone-left">
+                    <img src="assets/icons/UsersThree.svg" width="32" height="32" alt="">
+                    <div class="feature-card__text">
+                        <h3>Compartilhe com a comunidade</h3>
+                        <p>Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de outras pessoas no seu feed!</p>
+                    </div>
+                    <img class="feature-card__phone phone--bottom-left" src="assets/Tela%201.png" width="240" height="486" alt="Tela do feed do app com o vídeo de uma pessoa cantando">
+                </article>
+
+                <article class="feature-card feature-card--wide">
+                    <img src="assets/icons/MusicNotes.svg" width="32" height="32" alt="">
+                    <div class="feature-card__text">
+                        <h3>Letras em tempo-real</h3>
+                        <p>Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você também pode ativar a voz original da música para ajudar.</p>
+                    </div>
+                    <img class="feature-card__phone phone--top-right" src="assets/Tela%203.png" width="240" height="486" alt="Tela do app com a letra sincronizada da música">
+                </article>
+            </div>
+        </section>
+
+        <!-- Planos e preços -->
+        <section class="pricing py-xl" id="planos">
+            <div class="container">
+                <div class="pricing__heading">
+                    <span class="eyebrow">Planos e preços</span>
+                    <h2>Assine e tenha acesso ilimitado a todas as funcionalidades</h2>
+                </div>
+
+                <div class="pricing__table">
+                    <article class="pricing-card">
+                        <div class="pricing-card__price">
+                            <div>
+                                <h3 class="pricing-card__title">Básico</h3>
+                                <p>Baixe o app e comece a cantar agora mesmo!</p>
+                            </div>
+                            <p class="pricing-card__value">Grátis</p>
+                            <a href="#download" class="btn btn-md btn-secondary btn-full">Baixar agora</a>
+                        </div>
+                        <hr class="divider">
+                        <ul role="list" class="pricing-card__features">
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Com anúncios</li>
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Até 5 músicas por dia</li>
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Cante apenas as músicas disponíveis no plano gratuito</li>
+                        </ul>
+                    </article>
+
+                    <article class="pricing-card pricing-card--featured">
+                        <span class="pricing-card__badge">1 mês grátis</span>
+                        <div class="pricing-card__price">
+                            <div>
+                                <h3 class="pricing-card__title">Premium</h3>
+                                <p>Ideal para quem já cansou de passar vergonha no Karaokê</p>
+                            </div>
+                            <p class="pricing-card__value">R$ 24,90 <span>/mês</span></p>
+                            <a href="#download" class="btn btn-md btn-primary btn-full">Experimente de graça</a>
+                        </div>
+                        <hr class="divider">
+                        <ul role="list" class="pricing-card__features">
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Sem interrupção de anúncios</li>
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Cante quantas músicas quiser</li>
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Cante todas as músicas da biblioteca</li>
+                        </ul>
+                    </article>
+
+                    <article class="pricing-card">
+                        <div class="pricing-card__price">
+                            <div>
+                                <h3 class="pricing-card__title">Família</h3>
+                                <p>Para aquelas famílias que adoram se reunir pra cantar</p>
+                            </div>
+                            <p class="pricing-card__value">R$ 21,90 <span>/mês por pessoa</span></p>
+                            <a href="#download" class="btn btn-md btn-secondary btn-full">Assinar agora</a>
+                        </div>
+                        <hr class="divider">
+                        <ul role="list" class="pricing-card__features">
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Sem interrupção de anúncios</li>
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Cante quantas músicas quiser</li>
+                            <li><img src="assets/icons/Check.svg" width="24" height="24" alt="">Cante todas as músicas da biblioteca</li>
+                        </ul>
+                        <p class="pricing-card__note">Mínimo de 4 pessoas no plano família.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section class="download py-xl" id="download">
+            <div class="container">
+                <div class="download__card">
+                    <div class="download__text">
+                        <span class="eyebrow">Download</span>
+                        <h2>Bora cantar?</h2>
+                        <p>Desperte seu potencial de estrela, liberte sua voz e faça parte da comunidade musical mais envolvente. Baixe o Zingen agora e transforme suas performances em experiências inesquecíveis!</p>
+                    </div>
+
+                    <div class="store-buttons">
+                        <a href="#" class="store-btn">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                                <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+                            </svg>
+                            <span><small>Baixar na</small>App Store</span>
+                        </a>
+                        <a href="#" class="store-btn">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                                <path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/>
+                            </svg>
+                            <span><small>Disponível no</small>Google Play</span>
+                        </a>
+                    </div>
+
+                    <img class="download__image" src="assets/rapaz-ouvindo-musica-com-fones-de-ouvido-e-cantando-no-aplicativo-de-karaoke-removebg%201.png" width="466" height="627" alt="Rapaz cantando com fones de ouvido e o celular na mão">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-xl">
+        <div class="container">
+            <div class="footer__top">
+                <a href="#" class="logo">Zingen</a>
+
+                <div class="footer__links">
+                    <div>
+                        <h4 class="footer__title">Produto</h4>
+                        <ul role="list">
+                            <li><a href="#funcionalidades">Funcionalidades</a></li>
+                            <li><a href="#planos">Planos e preços</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="footer__title">Empresa</h4>
+                        <ul role="list">
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="footer__title">Legal</h4>
+                        <ul role="list">
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <ul role="list" class="socials">
+                    <li><a href="#" aria-label="TikTok"><img src="assets/icons/ic_baseline-tiktok.svg" width="24" height="24" alt=""></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="assets/icons/mdi_instagram.svg" width="24" height="24" alt=""></a></li>
+                    <li><a href="#" aria-label="X (Twitter)"><img src="assets/icons/ri_twitter-x-fill.svg" width="24" height="24" alt=""></a></li>
+                    <li><a href="#" aria-label="Discord"><img src="assets/icons/ic_baseline-discord.svg" width="24" height="24" alt=""></a></li>
+                </ul>
+                <p>©2024 Zingen Technologies, Inc.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
