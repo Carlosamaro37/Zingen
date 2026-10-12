@@ -400,10 +400,6 @@
 
 @media (width>=80em) {
 
-    .header .btn {
-        padding: .75rem 1.5rem;
-    }
-
     .hero {
         --arc-offset: 9rem;
         --arc-radius: 40rem;
@@ -416,8 +412,10 @@
 
     /* no desktop os botões do hero são do tamanho "lg" */
     .hero__cta .btn {
+        --btn-py: 1rem;
+        --btn-px: 2rem;
+        min-width: 7.5rem;
         font-size: 1.125rem;
-        padding: 1rem 2rem;
     }
 
     .about__inner {

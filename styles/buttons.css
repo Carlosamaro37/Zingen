@@ -1,5 +1,10 @@
 .btn{
-    border: 1.5px solid transparent;
+    --btn-border: 1.5px;
+    --btn-py: .75rem;
+    --btn-px: 1.5rem;
+
+    position: relative;
+    border: var(--btn-border) solid transparent;
     background-color: transparent;
 
     display: flex;
@@ -7,42 +12,79 @@
     justify-content: center;
     width: fit-content;
 
+    /* no Figma a borda fica "por dentro": descontamos ela do padding
+       para os botões terem a altura exata (56px, 48px e 40px) */
+    padding: calc(var(--btn-py) - var(--btn-border)) calc(var(--btn-px) - var(--btn-border));
     border-radius: .5rem;
 
     font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
     white-space: nowrap;
     cursor: pointer;
-    transition: opacity .2s, background-color .2s, color .2s;
+    transition: color .2s, border-color .2s;
 }
 
 .btn-sm {
+    --btn-py: .5rem;
+    --btn-px: 1rem;
+    min-width: 5rem;
     font-size: var(--fs-sm);
-    padding: .5rem 1rem;
 }
 .btn-md {
+    --btn-py: .75rem;
+    --btn-px: 1.5rem;
+    min-width: 6rem;
     font-size: var(--fs-base);
-    padding: .75rem 1.5rem;
 }
 .btn-lg {
+    --btn-py: 1rem;
+    --btn-px: 2rem;
+    min-width: 7.5rem;
     font-size: 1.125rem;
-    padding: 1rem 2rem;
 }
 
+/* Primário: fundo branco -> fundo em gradiente no hover */
 .btn-primary {
-    background-color: var(--text-color-primary);
+    background: var(--text-color-primary);
     color: var(--bg-color);
 }
 .btn-primary:hover {
-    opacity: .85;
+    /* border-box: o gradiente começa embaixo da borda transparente, sem emenda */
+    background: var(--gradient-sunshine) border-box;
 }
 
+/* Secundário: borda branca -> borda e texto em gradiente no hover */
 .btn-secondary {
     border-color: var(--text-color-primary);
     color: var(--text-color-primary);
 }
+
+/* borda em gradiente: um fundo em gradiente com o "miolo" recortado pela máscara */
+.btn-secondary::before {
+    content: '';
+    position: absolute;
+    inset: calc(var(--btn-border) * -1);
+    padding: var(--btn-border);
+    border-radius: inherit;
+    background: var(--gradient-sunshine);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity .2s;
+    pointer-events: none;
+}
+
 .btn-secondary:hover {
-    background-color: var(--text-color-primary);
-    color: var(--bg-color);
+    border-color: transparent;
+    /* texto em gradiente */
+    background: var(--gradient-sunshine);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.btn-secondary:hover::before {
+    opacity: 1;
 }
 
 .btn-full {
