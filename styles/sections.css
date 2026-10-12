@@ -385,11 +385,16 @@
 
 .socials a {
     display: block;
-    transition: opacity .2s;
 }
 
-.socials a:hover {
-    opacity: .7;
+.socials svg {
+    fill: var(--text-color-secondary);
+}
+
+/* mesmo hover dos botões: o ícone fica com o gradiente laranja -> amarelo */
+.socials a:hover svg,
+.socials a:focus-visible svg {
+    fill: url(#sunshine-icon);
 }
 
 .footer__bottom p {

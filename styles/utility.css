@@ -17,6 +17,15 @@
     margin-inline: auto;
 }
 
+/* esconde visualmente sem remover da página */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
 .desktop-only{
     display: none;
 }

@@ -96,6 +96,12 @@ svg {
     max-width: 100%;
 }
 
+/* a altura acompanha a largura e mantém a proporção original da imagem
+   (sem isso, o atributo height="" do HTML deixa a altura fixa e a imagem estica) */
+img {
+    height: auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
